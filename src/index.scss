@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    .logo-margin{
+        margin-left: 13rem !important;
+    }
+}
+.header-skew{
+    background-color: #122030!important;
+    transform: skewX(31deg) translateX(40%)!important;
+    .inverse-header{
+        transform: skewX(-31deg);
+        font-size:12px;
+    }
+    a{
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,11 @@
+Context is used to avoid too many props passing down to tree unnecessarily.
+Example -> Using Some themes on deeply nested components 
+
+Looks ugly
+....
+
+<compa theme={prop.theme}>
+    <compb theme={prop.theme}>
+</compb>
+
+Context provides good way to do it please refer reacr Context
