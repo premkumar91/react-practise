@@ -19,18 +19,20 @@ class Header extends React.Component{
   }
   render(){
     return (
-      <div>
-        <div>
-          <nav className="navbar header-skew">
+      <>
+        <span className="social-header d-none d-md-block">
+          <a className="mr-1"><i className="fab fa-facebook-f"></i></a>
+          <a className="mr-1"><i className="fab fa-twitter"></i></a>
+        </span>
+        <div className="header-section d-none d-md-block">
+          <div className="navbar header-skew">
             <div className="inverse-header text-light">
               <a className="mr-2" onClick={this.handleFacebook}><i className="fas fa-phone"></i>{' '}90909090</a>
               <a onClick={this.handleFacebook}><i className="fas fa-envelope"></i>{' '}xxx@xx.com</a>
-              <a className="ml-5"onClick={this.handleFacebook}><i className="fab fa-facebook-f"></i></a>
-              <a onClick={this.handleFacebook}><i className="fab fa-twitter"></i></a>
             </div>            
-          </nav>
+          </div>
         </div>         
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <nav className="navbar navbar-expand-md navbar-light">
           <a className="navbar-brand logo-margin" href="/">
             <img src="one.svg" width="30" height="30" className="d-inline-block align-top" alt=""/>
             {' '}Logistics
@@ -41,29 +43,28 @@ class Header extends React.Component{
           </button>
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             {/* <ul className="navbar-nav mr-auto"/> */}
-            <ul className="navbar-nav text-right">
+            <ul className="navbar-nav text-right nav-cus-font font-weight-bold">
               <li className="nav-item active">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/"><i class="fas fa-home mr-1"></i>HOME<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">About us</a>
+                <a className="nav-link" href="/about"><i class="fas fa-user mr-1"></i>ABOUT US</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
+                <i class="fab fa-servicestack mr-1"></i>SERVICES
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="#">Freight Forwarding</a>
-                  <a className="dropdown-item" href="#">Another action</a>
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">Contact us</a>
+                <a className="nav-link" href="/contact_us"><i class="fas fa-comment mr-1"></i>CONTACT</a>
               </li>
             </ul>
           </div>
         </nav>
-      </div>
+      </>
     )
   }
 }

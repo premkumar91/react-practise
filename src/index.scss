@@ -6,6 +6,8 @@
 .header-skew{
     background-color: #122030!important;
     transform: skewX(31deg) translateX(40%)!important;
+    overflow: hidden;
+    max-width: 100%;
     .inverse-header{
         transform: skewX(-31deg);
         font-size:12px;
@@ -14,4 +16,41 @@
         cursor: pointer;
     }
 }
-
+.nav-cus-font{
+    font-size: 0.75rem;
+}
+.header-section{
+    max-width: 100%;
+    overflow: hidden;
+}
+.social-header{
+    position: fixed;
+    color: white;
+    right: 6%;
+    top: 0.55rem;
+    z-index: 999;
+    font-size: 12px
+}
+.underline-block{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    display: block;
+    .underline{
+        background-color: #0d5195;
+        display: inline-block;
+        width: 50px;
+        height: 3px;
+    }
+}
+.card-bottom-caption{
+    position: absolute;
+    z-index: 9;
+    bottom: 12%;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+.slider-caption{
+    margin-bottom: 10.5rem;
+}
