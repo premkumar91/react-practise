@@ -26,12 +26,12 @@ class Content2 extends React.Component{
           },
           {
             "id":3,  
-            "320":["ship1_576x324.jpg"],  //array to support diffrent dpi later
-            "576":["ship1_576x324.jpeg"],
-            "768":["ship1_768x308.jpeg"],
-            "1024":["ship1_1024x410.jpeg"],
-            "1200":["ship1_1200x480.jpeg"],
-            "1440":["ship1_1440x576.jpeg"]
+            "320":["ship3_576x324.jpg"],  //array to support diffrent dpi later
+            "576":["ship3_576x324.jpeg"],
+            "768":["ship3_768x308.jpeg"],
+            "1024":["ship3_1024x410.jpeg"],
+            "1200":["ship3_1200x480.jpeg"],
+            "1440":["ship3_1440x576.jpeg"]
           },
           {
             "id":4,  
@@ -74,7 +74,7 @@ class Content2 extends React.Component{
                 {this.getSlidesComponents()}
             </div>
             <div className="carousel-caption">
-                <h2>We Freight anywhere in the globe</h2>
+                <h2 className="display-4">We Freight anywhere in the globe</h2>
                 {/* <p>Caption Description</p> */}
             </div>
         </div>

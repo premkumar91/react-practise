@@ -5,6 +5,7 @@ import About from "../components/about/About"
 import Header from "../components/header/Header"
 import Contact from '../components/contact/Contact';
 import Services from '../components/services/Services';
+import Footer from '../components/footer/Footer';
 
 class App extends React.Component{
   constructor(props){
@@ -19,6 +20,7 @@ class App extends React.Component{
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={Services} />
         <Route exact path="/contact_us" component={Contact} />
+        <Footer/>
         </>      
       </Router>
     )

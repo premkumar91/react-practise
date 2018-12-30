@@ -54,3 +54,25 @@
 .slider-caption{
     margin-bottom: 10.5rem;
 }
+.zoom{
+    transition: transform 2s ease-in-out 0s;
+}
+.zoom:hover{
+    transform: scale(1.5);
+}
+.underline-color{
+    background-color: #007bff!important;
+}
+.footer-link{
+    background-color: unset!important;
+    border: unset;
+    font-size: 0.75rem;
+    a{
+        font-size: 11px;
+    }
+}
+.footer{
+    p{
+        font-size: 13px;
+    }
+}
