@@ -6,7 +6,7 @@ class Footer extends React.Component{
     render(){
         return (
             <>
-            <div className="jumbotron jumbotron-fluid bg-dark text-white footer">
+            <div className="jumbotron bg-dark text-white footer">
                 <div className="row text-center">
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
                      ABOUT US<span class="underline-block"><span class="underline underline-color"></span></span>
@@ -32,12 +32,6 @@ class Footer extends React.Component{
                     </ul>
                     </div>
                 </div>
-                {/* <div className="p-5">
-                    <h1 className="display-4">Hello, world!</h1>
-                    <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </div> */}
             </div>
             </>
         )

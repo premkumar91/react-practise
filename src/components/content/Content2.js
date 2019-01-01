@@ -8,7 +8,7 @@ class Content2 extends React.Component{
       this.state = {
           slides:[{
             "id":1,  
-            "320":["flight1_576x324.jpg"],  //array to support diffrent dpi later
+            "320":["flight1_576x324.jpeg"],  //array to support diffrent dpi later
             "576":["flight1_576x324.jpeg"],
             "768":["flight1_768x308.jpeg"],
             "1024":["flight1_1024x410.jpeg"],
@@ -17,7 +17,7 @@ class Content2 extends React.Component{
           },
           {
             "id":2,  
-            "320":["truck2_576x324.jpg"],  //array to support diffrent dpi later
+            "320":["truck2_576x324.jpeg"],  //array to support diffrent dpi later
             "576":["truck2_576x324.jpeg"],
             "768":["truck2_768x308.jpeg"],
             "1024":["truck2_1024x410.jpeg"],
@@ -26,7 +26,7 @@ class Content2 extends React.Component{
           },
           {
             "id":3,  
-            "320":["ship3_576x324.jpg"],  //array to support diffrent dpi later
+            "320":["ship3_576x324.jpeg"],  //array to support diffrent dpi later
             "576":["ship3_576x324.jpeg"],
             "768":["ship3_768x308.jpeg"],
             "1024":["ship3_1024x410.jpeg"],
@@ -35,8 +35,8 @@ class Content2 extends React.Component{
           },
           {
             "id":4,  
-            "320":["ship2_576x324.jpg"],  //array to support diffrent dpi later
-            "576":["ship2_576x324.jpeg"],
+            "320":["ship2_576x374.jpeg"],  //array to support diffrent dpi later
+            "576":["ship2_576x374.jpeg"],
             "768":["ship2_768x308.jpeg"],
             "1024":["ship2_1024x410.jpeg"],
             "1200":["ship2_1200x480.jpeg"],
@@ -74,7 +74,9 @@ class Content2 extends React.Component{
                 {this.getSlidesComponents()}
             </div>
             <div className="carousel-caption">
-                <h2 className="display-4">We Freight anywhere in the globe</h2>
+                <h4>We Freight anywhere in the globe</h4>
+                {/* <h2 className="d-block d-sm-block d-md-block">We Freight anywhere in the globe</h2>
+                <h2 className="display-4 d-none d-lg-block d-xl-block">We Freight anywhere in the globe</h2> */}
                 {/* <p>Caption Description</p> */}
             </div>
         </div>

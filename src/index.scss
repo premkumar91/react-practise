@@ -76,3 +76,12 @@
         font-size: 13px;
     }
 }
+.list-item-unset{
+    background-color: unset;
+    border: unset;
+    padding: 0;
+    i{
+        font-size: 0.05rem;
+        margin-right: 0.5rem;
+    }
+}
