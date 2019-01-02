@@ -35,7 +35,7 @@ class Header extends React.Component{
         <nav className="navbar navbar-expand-md navbar-light">
           <a className="navbar-brand logo-margin" href="/">
             <img src="one.svg" width="30" height="30" className="d-inline-block align-top" alt=""/>
-            {' '}Logistics
+            {' '}GSS freight Forwarders
           </a>
           <ul className="ml-auto"/>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,8 +55,8 @@ class Header extends React.Component{
                 <i class="fab fa-servicestack mr-1"></i>SERVICES
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Freight Forwarding</a>
-                  <a className="dropdown-item" href="#">Air & Sea Cargo Tracking</a>
+                  <a className="dropdown-item" href="/freight_forwarding">Freight Forwarding</a>
+                  <a className="dropdown-item" href="/tracking">Air & Sea Cargo Tracking</a>
                 </div>
               </li>
               <li className="nav-item">
