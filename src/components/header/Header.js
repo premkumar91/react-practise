@@ -31,11 +31,15 @@ class Header extends React.Component{
               <a onClick={this.handleFacebook}><i className="fas fa-envelope"></i>{' '}xxx@xx.com</a>
             </div>            
           </div>
+          {/* <div className="social-icon">
+            <a class="mr-1"><i class="fab fa-facebook-f"></i></a>
+            <a class="mr-1"><i class="fab fa-twitter"></i></a>
+          </div> */}
         </div>         
         <nav className="navbar navbar-expand-md navbar-light">
-          <a className="navbar-brand logo-margin" href="/">
-            <img src="one.svg" width="30" height="30" className="d-inline-block align-top" alt=""/>
-            {' '}GSS freight Forwarders
+          <a className="navbar-brand logo-margin nav-logo" href="/">
+            <img src="icon1.png" width="50" height="50" className="d-inline-block align-middle" alt=""/>
+            <span className="align-middle">{' '}GSS freight Forwarders</span>
           </a>
           <ul className="ml-auto"/>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
