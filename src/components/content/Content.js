@@ -51,9 +51,10 @@ class Content extends React.Component{
         for(let i=0,l=this.supportedBreakPoints.length;i<l;i++){
             if(window.innerWidth <= this.supportedBreakPoints[i]){
                 this.activeBreakPoint = this.supportedBreakPoints[i];
-                break;
+                return;
             }
         }
+        this.activeBreakPoint = this.supportedBreakPoints[this.supportedBreakPoints.length-1];
     }
 
     getSlidesComponents(){        

@@ -5,11 +5,15 @@ import FreightServicesPromo from '../content/FreightServicesPromo'
 function About(){
     return (
       <>
-      <Content/>
-      <CompanyDescription/>
+      {/* <Content/> */}
+      
+      {/* <CompanyDescription/> */}
       <div className="jumbotron mb-0">
+        <p class="text-center display-4 mt-2">WHAT WE DO</p>
+        <span class="underline-block"><span class="underline"></span></span>
+        <p className="text-justify p-3">GSS freight Forwarder always works closely with the customers to provide a best possible solution for their business needs which strives a great success for customers. whether you are a small or big firm, thinking of to export or import your goods anywhere in the world, no worry! we are here to provide dock to door freight forwarding services in an ease manner. we provide a full range of services including tracking inland transportation, preparation of shipping and export documents, warehousing, booking cargo space, negotiating freight charges, freight consolidation, cargo insurance, and filing of insurance claims. we have an established relationships with carriers, from air freighters and trucking companies, to rail freighters and ocean liners, giving the best possible price to move your goods along the most economical route by working out various bids and choosing the one that best balances speed, cost, and reliability.</p>
         <h1 class="display-4 text-center mb-2">Freight Forwarding Services</h1>
-        <p class="lead text-center mb-5 mt-5">Our freight forwarding services are built for any size of firms. we strive hard to make our customers happy by understanding their needs and deliver the best solutions. From ocean shipments to airfreight and inland transportation, our established carrier network ensure complete safety, fast transit times and hassle free shipment to destination.</p>
+        <p class="lead mb-5 mt-5 text-justify">Our freight forwarding services are built for any size of firms. we strive hard to make our customers happy by understanding their needs and deliver the best solutions. From ocean shipments to airfreight and inland transportation, our established carrier network ensure complete safety, fast transit times and hassle free shipment to destination.</p>
           <FreightServicesPromo/>
           {/* <div className="row">
             <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">

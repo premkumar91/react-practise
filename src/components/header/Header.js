@@ -20,21 +20,19 @@ class Header extends React.Component{
   render(){
     return (
       <>
-        <span className="social-header d-none d-md-block">
-          <a className="mr-1"><i className="fab fa-facebook-f"></i></a>
-          <a className="mr-1"><i className="fab fa-twitter"></i></a>
-        </span>
+        <div className="social-icon">
+           <span>
+            <a className="mr-1"><i className="fab fa-facebook-f"></i></a>
+            <a className="mr-1"><i className="fab fa-twitter"></i></a>
+           </span>
+        </div> 
         <div className="header-section d-none d-md-block">
           <div className="navbar header-skew">
             <div className="inverse-header text-light">
               <a className="mr-2" onClick={this.handleFacebook}><i className="fas fa-phone"></i>{' '}90909090</a>
               <a onClick={this.handleFacebook}><i className="fas fa-envelope"></i>{' '}xxx@xx.com</a>
             </div>            
-          </div>
-          {/* <div className="social-icon">
-            <a class="mr-1"><i class="fab fa-facebook-f"></i></a>
-            <a class="mr-1"><i class="fab fa-twitter"></i></a>
-          </div> */}
+          </div>           
         </div>         
         <nav className="navbar navbar-expand-md navbar-light">
           <a className="navbar-brand logo-margin nav-logo" href="/">
