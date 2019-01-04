@@ -50,7 +50,7 @@ class Header extends React.Component{
                 <a className="nav-link" href="/"><i class="fas fa-home mr-1"></i>HOME<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about"><i class="fas fa-user mr-1"></i>ABOUT US</a>
+                <a className="nav-link" href="/about"><i class="fas fa-user mr-1"></i>ABOUT</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

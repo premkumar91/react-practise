@@ -6,16 +6,36 @@ class CompanyDescription extends React.Component{
     render(){
         return (
             <>
-            <span className="underline-block">
-                <h6 className="pt-5">WELCOME TO </h6>
-                <h1 className="display-5 pt-1"> GSS Freight Forwarders </h1>
-                <footer class="blockquote-footer">we value your business</footer>
-                <span className="underline"></span>
-                <p className="text-justify p-3">Our freight forwarding business always works closely with the customers to provide a best possible solution for their business needs which strives a great success for customers. whether you are a small or big firm, thinking of to export or import your goods anywhere in the world, no worry! we are here to provide dock to door freight forwarding services in an ease manner.
-                we provide a full range of services including tracking inland transportation, preparation of shipping and export documents, warehousing, booking cargo space, negotiating freight charges, freight consolidation, cargo insurance, and filing of insurance claims.
-                we have an established relationships with carriers, from air freighters and trucking companies, to rail freighters and ocean liners, giving the best possible price to move your goods along the most economical route by working out various bids and choosing the one that best balances speed, cost, and reliability.                
-                </p>
-            </span>
+            <div className="jumbotron m-0 p-0 pl-1 pr-1">
+                <span className="underline-block mb-0">
+                    <h6 className="pt-5">WELCOME TO </h6>
+                    <h1 className="display-5 pt-1"> GSS Freight Forwarders </h1>
+                    <footer class="blockquote-footer">we value your business</footer>
+                    <span className="underline"></span>
+                    <div className="text-justify p-3">
+                        <p>
+                            Our freight forwarding business always work closely with customers to provide finest solution for their business needs. We strive for customer's prosperity. Thinking of import/export goods across the globe, we deliver with ease dock to door.                 
+                        </p>
+                        <p className="m-0">
+                            Our service spectrum has it all. Naming a few...
+                        </p>
+                        <ul className="list-group list-group-flush">
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>tracking inland transportation</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>preparation of shipping and export documents</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>warehousing</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>booking cargo space</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>negotiating freight charges</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>freight consolidation</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>cargo insurance</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>filing of insurance claims </li>
+                        </ul>
+                        <p className="mt-2">
+                            Our affiliation with world class carriers, affirms best feasible costs to move goods. From air frieghters and trucking companies, to rail frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness. 
+                        </p>
+                    </div>    
+                </span>
+            </div>    
+            
             </>
         )
     }

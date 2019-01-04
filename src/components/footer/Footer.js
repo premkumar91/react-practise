@@ -43,6 +43,7 @@ class Footer extends React.Component{
                     </ul>
                     </div>
                 </div>
+                <p className="text-center">&copy; 2019 GSS Freight Forwarders</p>               
             </div>
             </>
         )

@@ -39,7 +39,7 @@ class ServicesPromoContent extends React.Component {
                     </div> 
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h1 className="text-center font-weight-light">Air Freight</h1>
-                        <p className="lead">We provide reliable and efficient air-freight forwarding services. with an excellence chain of major operators available on 24/7, we promise timely and cost effective delivery of your goods. our good relationships with global airline partnership aims to offer lowest price and timely delivery of your goods through well equipped supply chain management. we help our customers to save large amounts of freight by genuine guidance, procedures, consolidation etc.</p>
+                        <p className="lead">With round-the-clock operations, our Air- freight services, are solid and skillful. We guarantee prompt and cost effective delivery of your goods. Our accompliance with global airline poineers, targets flat prices and deligent delivery of goods. Customer's delight is our motto.</p>
                         <p className="mb-2 font-weight-bold ">Our Customised Services are</p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>World wide consolidation services</li>
@@ -55,7 +55,9 @@ class ServicesPromoContent extends React.Component {
                 <div className="row pt-5">
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-2">
                         <h1 className="text-center font-weight-light">Land Freight</h1>
-                        <p className="lead">We provide efficient and reliable road freight services. we offer various modes of services to our customers like port to port, door to door, door to port or door services. We value our customer need, whether it may be big size or small size, we will help to grow your business in a highly cost effective manner.</p>
+                        <p className="lead text-justify">
+                            Road Freight Services is our main player that relies upon efficient and reliable services. 
+                            Port to port, door to door, door to port or door services, any mode of services is done. Regardless of size, we value customer the most hence growing along with them is our growth.</p>
                         <p className="mb-2 font-weight-bold ">Our Customised Services are</p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Door to Door services.</li>
@@ -78,7 +80,7 @@ class ServicesPromoContent extends React.Component {
                     </div> 
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                         <h1 className="text-center font-weight-light">Sea Freight</h1>
-                        <p className="lead">We provide a global sea freight services to small and big companies. we are an intrinsic part of our customers import/export departments, offering seamless logistics solutions for enormous variety of cargos, ensuring fast transit time and full control over it. we have an elegant tracking system to keep your business on track.</p>
+                        <p className="lead text-justify">With multitude of global sea frieght services, we offer seamless logistics to small -scale to fortune companies. we are an intrinsic part of our customers import/export departments, offering flawless logistics solutions for enormous variety of cargos, ensuring fast transit time and full control over it. we have an elegant tracking system to keep your business on track.</p>
                         <p className="mb-2 font-weight-bold ">Our Customised Services are</p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Flexible FCL/LCL load services.</li>
