@@ -4,10 +4,15 @@ class Header extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      isOpen:false
+      isOpen:false,
+      servicesNavClass:'nav-item dropdown',
+      servicesAriaExpanded:'false',
+      servicesDropDownMenu:'dropdown-menu'
     }
     this.toggle=this.toggle.bind(this);
     this.handleFacebook=this.handleFacebook.bind(this);
+    this.mouseEnter=this.mouseEnter.bind(this);
+    this.mouseLeave=this.mouseLeave.bind(this);
   }
   toggle(){
     this.setState({
@@ -16,6 +21,20 @@ class Header extends React.Component{
   }
   handleFacebook(){
     alert('hi')
+  }
+  mouseEnter(){
+    this.setState({
+      servicesNavClass:'nav-item dropdown show',
+      servicesAriaExpanded:'true',
+      servicesDropDownMenu:'dropdown-menu show'
+    })
+  }
+  mouseLeave(){
+    this.setState({
+      servicesNavClass:'nav-item dropdown',
+      servicesAriaExpanded:'false',
+      servicesDropDownMenu:'dropdown-menu'
+    })
   }
   render(){
     return (
@@ -52,11 +71,11 @@ class Header extends React.Component{
               <li className="nav-item">
                 <a className="nav-link" href="/about"><i class="fas fa-user mr-1"></i>ABOUT</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className={this.state.servicesNavClass} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded={this.state.servicesAriaExpanded}>
                 <i class="fab fa-servicestack mr-1"></i>SERVICES
                 </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div className={this.state.servicesDropDownMenu} aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="/freight_forwarding">Freight Forwarding</a>
                   <a className="dropdown-item" href="/tracking">Air & Sea Cargo Tracking</a>
                 </div>

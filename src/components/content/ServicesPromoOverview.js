@@ -39,7 +39,7 @@ class ServicesPromoContent extends React.Component {
                     </div> 
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <h1 className="text-center font-weight-light">Air Freight</h1>
-                        <p className="lead">With round-the-clock operations, our Air- freight services, are solid and skillful. We guarantee prompt and cost effective delivery of your goods. Our accompliance with global airline poineers, targets flat prices and deligent delivery of goods. Customer's delight is our motto.</p>
+                        <p className="lead">With round-the-clock operations, our Air- freight services, are solid and skillful. We guarantee prompt and cost effective delivery of your goods. Our accompliance with global airline pioneers, targets flat prices and deligent delivery of goods. Customer's delight is our motto.</p>
                         <p className="mb-2 font-weight-bold ">Our Customised Services are</p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>World wide consolidation services</li>
