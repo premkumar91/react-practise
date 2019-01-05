@@ -26,14 +26,14 @@ class Header extends React.Component{
     this.setState({
       servicesNavClass:'nav-item dropdown show',
       servicesAriaExpanded:'true',
-      servicesDropDownMenu:'dropdown-menu show'
+      servicesDropDownMenu:'dropdown-menu show m-0'
     })
   }
   mouseLeave(){
     this.setState({
       servicesNavClass:'nav-item dropdown',
       servicesAriaExpanded:'false',
-      servicesDropDownMenu:'dropdown-menu'
+      servicesDropDownMenu:'dropdown-menu m-0'
     })
   }
   render(){
