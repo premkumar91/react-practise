@@ -1,0 +1,88 @@
+{"data":[
+    {
+    "listAttributes":{
+        "className":"nav-item active",
+        "key":1
+    },
+    "iconAttributes":{
+        "className":"fas fa-home mr-1"
+    },
+    "name":"HOME",
+    "linkAtrributes":{
+        "href":"/",
+        "className":"nav-link"
+    }
+},
+{
+    "listAttributes":{
+        "className":"nav-item",
+        "key":2
+    },
+    "iconAttributes":{
+        "className":"fas fa-user mr-1"
+    },
+    "name":"ABOUT",
+    "linkAtrributes":{
+        "href":"/about",
+        "className":"nav-link"
+    }
+},
+{
+    "listAttributes":{
+        "className":"nav-item dropdown",
+        "key":3
+    },
+    "iconAttributes":{
+        "className":"fab fa-servicestack mr-1"
+    },
+    "linkAtrributes":{
+        "href":"#",
+        "id":"navbarDropdown",
+        "role":"button",
+        "data-toggle":"dropdown",
+        "aria-haspopup":"true",
+        "aria-expanded":"false",
+        "className":"nav-link dropdown-toggle"
+    },
+    "dropDownMenuClass":"dropdown-menu m-0",
+    "dropDownMenuAttributes":{
+        "aria-labelledby":"navbarDropdown",
+        "className":"dropdown-menu m-0"
+    },
+    "dropDownItems":[{
+        "attributes":{
+            "className":"dropdown-item",
+            "href":"/freight_forwarding",
+            "key":1
+        },
+        "name":"Freight Forwarding" 
+    },
+    {
+        "attributes":{
+            "className":"dropdown-item",
+            "href":"/tracking",
+            "key":2
+        },
+        "name":"Tracking"
+    }
+    ],
+    "isDropDown":true,
+    "name":"SERVICES",
+    "servicesAriaExpandedAttr":"false",
+    "servicesDropDownMenuClass":"dropdown-menu"
+},
+{
+    "listAttributes":{
+        "className":"nav-item",
+        "key":4
+    },
+    "iconAttributes":{
+        "className":"fas fa-comment mr-1"
+    },
+    "name":"CONTACT",
+    "linkAtrributes":{
+        "href":"/contact_us",
+        "className":"nav-link"
+    }
+}
+]}

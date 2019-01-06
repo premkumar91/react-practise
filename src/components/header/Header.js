@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import navItems from './config.json'
 class Header extends React.Component{
   constructor(props){
     super(props);
@@ -7,7 +8,8 @@ class Header extends React.Component{
       isOpen:false,
       servicesNavClass:'nav-item dropdown',
       servicesAriaExpanded:'false',
-      servicesDropDownMenu:'dropdown-menu'
+      servicesDropDownMenu:'dropdown-menu',
+      navItems:this.updateGetNavItems(navItems.data)
     }
     this.toggle=this.toggle.bind(this);
     this.handleFacebook=this.handleFacebook.bind(this);
@@ -19,30 +21,72 @@ class Header extends React.Component{
       isOpen: !this.state.isOpen
     })
   }
+  updateGetNavItems(navItems){
+    let serviceNavItem = navItems.find((item)=>item.name === "SERVICES")
+    let handler = {
+      onMouseEnter : (e)=>{
+        this.mouseEnter(serviceNavItem,e);
+      },
+      onMouseLeave : (e)=>{
+        this.mouseLeave(serviceNavItem,e);
+      }
+    }
+    serviceNavItem.listAttributes = {...serviceNavItem.listAttributes,...handler}    
+    
+    return navItems
+  }
   handleFacebook(){
-    alert('hi')
+    
   }
-  mouseEnter(){
-    this.setState({
-      servicesNavClass:'nav-item dropdown show',
-      servicesAriaExpanded:'true',
-      servicesDropDownMenu:'dropdown-menu show m-0'
-    })
+  mouseEnter(item){
+    // this.setState({
+    //   servicesNavClass:'nav-item dropdown show',
+    //   servicesAriaExpanded:'true',
+    //   servicesDropDownMenu:'dropdown-menu show m-0'
+    // })
+    console.log(arguments);
   }
-  mouseLeave(){
-    this.setState({
-      servicesNavClass:'nav-item dropdown',
-      servicesAriaExpanded:'false',
-      servicesDropDownMenu:'dropdown-menu m-0'
-    })
+  mouseLeave(item){
+    // this.setState({
+    //   servicesNavClass:'nav-item dropdown',
+    //   servicesAriaExpanded:'false',
+    //   servicesDropDownMenu:'dropdown-menu m-0'
+    // })
+    console.log(arguments);
   }
+  navDropDown(item){
+    if(item && !item.isDropDown)
+      return null;
+
+    return (
+      <div {...item.dropDownMenuAttributes}>
+                {item.dropDownItems.map((dropDownItem)=>
+                  <a {...dropDownItem.attributes}>{dropDownItem.name}</a>
+                )}
+      </div>
+    )
+  }
+  navList(){
+    let dropDown
+    return (
+      <>
+      {this.state.navItems.map((item)=>
+        <li {...item.listAttributes}>
+          <a {...item.linkAtrributes}><i {...item.iconAttributes}></i>{item.name}</a>
+          {this.navDropDown(item)}
+        </li>
+      )}
+      </>
+    )
+  }
+
   render(){
     return (
       <>
         <div className="social-icon">
            <span>
-            <a className="mr-1"><i className="fab fa-facebook-f"></i></a>
-            <a className="mr-1"><i className="fab fa-twitter"></i></a>
+            <a className="mr-1 text-light" href="https://twitter.com/premjec91" target="_blank"><i className="fab fa-facebook-f"></i></a>
+            <a className="mr-1 text-light" href="https://twitter.com/premjec91" target="_blank"><i className="fab fa-twitter"></i></a>
            </span>
         </div> 
         <div className="header-section d-none d-md-block">
@@ -63,9 +107,9 @@ class Header extends React.Component{
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-            {/* <ul className="navbar-nav mr-auto"/> */}
             <ul className="navbar-nav text-right nav-cus-font font-weight-bold">
-              <li className="nav-item active">
+              {this.navList()}
+              {/* <li className="nav-item active">
                 <a className="nav-link" href="/"><i class="fas fa-home mr-1"></i>HOME<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
@@ -82,7 +126,7 @@ class Header extends React.Component{
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/contact_us"><i class="fas fa-comment mr-1"></i>CONTACT</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

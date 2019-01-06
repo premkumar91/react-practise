@@ -10,7 +10,7 @@ class CompanyDescription extends React.Component{
                 <span className="underline-block mb-0">
                     <h6 className="pt-5">WELCOME TO </h6>
                     <h1 className="display-5 pt-1"> GSS Freight Forwarders </h1>
-                    <footer class="blockquote-footer">we value your business</footer>
+                    <footer className="blockquote-footer">we value your business</footer>
                     <span className="underline"></span>
                     <div className="text-justify p-4">
                         <p>

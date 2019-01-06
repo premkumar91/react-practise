@@ -1,3 +1,26 @@
+6 jan works
+=======
+For Static Reusable component Templates which doesnt use react maintain its state in component level app. 
+When we using map for loop component.
+1. configuarotor json will have the component building DOM atrribute.
+2. Our component class will extends its configurator in state and add event handler specific to the item or all.
+    So our class will have a custom control over the configuaration.See Header Navbar implemetation in header.js.
+3. power of configuaration + jsx spread syntax usage header.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================
 Resolution supported
 Breakpoint
 <576    -> 56.25% aspectratio
