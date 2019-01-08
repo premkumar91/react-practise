@@ -38,21 +38,26 @@ class Header extends React.Component{
   handleFacebook(){
     
   }
-  mouseEnter(item){
-    // this.setState({
-    //   servicesNavClass:'nav-item dropdown show',
-    //   servicesAriaExpanded:'true',
-    //   servicesDropDownMenu:'dropdown-menu show m-0'
-    // })
-    console.log(arguments);
+  mouseEnter(item,event){
+    let prevNavItems = {...this.state.navItems}
+    if(item && item.listAttributes)
+    {
+      prevNavItems[item.listAttributes.key-1].className = "nav-item dropdown show";
+      prevNavItems[item.listAttributes.key-1]["aria-expanded"] = true;
+      prevNavItems[item.listAttributes.key-1].dropDownMenuAttributes.className = "dropdown-menu m-0 show";    
+      this.setState(prevNavItems);  
+    }
   }
-  mouseLeave(item){
-    // this.setState({
-    //   servicesNavClass:'nav-item dropdown',
-    //   servicesAriaExpanded:'false',
-    //   servicesDropDownMenu:'dropdown-menu m-0'
-    // })
-    console.log(arguments);
+  mouseLeave(item,event){
+
+    let prevNavItems = {...this.state.navItems}
+    if(item && item.listAttributes)
+    {
+      prevNavItems[item.listAttributes.key-1].className = "nav-item dropdown";
+      prevNavItems[item.listAttributes.key-1].linkAtrributes["aria-expanded"] = false;
+      prevNavItems[item.listAttributes.key-1].dropDownMenuAttributes.className = "dropdown-menu m-0";    
+      this.setState(prevNavItems);  
+    }
   }
   navDropDown(item){
     if(item && !item.isDropDown)
