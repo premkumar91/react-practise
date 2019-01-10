@@ -1,0 +1,4 @@
+Forms & Validation
+==============
+Basic native merhods available for formvalidation
+https://www.w3schools.com/js/js_validation.asp

@@ -2,12 +2,13 @@ import React from 'react';
 import {BrowserRouter as Router,Route,Link,Switch} from "react-router-dom";
 import Home from "../components/home/Home"
 import About from "../components/about/About"
-import Header from "../components/header/Header"
+import Header from "../components/header/Header" 
 import Contact from '../components/contact/Contact';
 import Services from '../components/services/Services';
 import Footer from '../components/footer/Footer';
 import FreightForwading from '../components/freight_forwarding/FreightForwarding';
 import Tracking from '../components/tracking/Tracking';
+import {routes} from '../routes';
 
 class App extends React.Component{
   constructor(props){
@@ -19,13 +20,9 @@ class App extends React.Component{
         <>
         <Header/>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/services" component={Services} />
-          <Route exact path="/contact_us" component={Contact} />
-          <Route exact path="/freight_forwarding" component={FreightForwading} />
-          <Route exact path="/tracking" component={Tracking} />
-          <Route component={Home} />
+          {routes.data.map((route)=>
+          <Route exact path={route.path} component={route.component}/>)}
+          <Route component={routes.defaultRoute.component}/>
         </Switch>
         <Footer/>
         </>      
