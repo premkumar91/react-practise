@@ -1,2 +1,22 @@
 Questions:
 How to change the deeply nested state object using setstate.
+
+{
+    prop1:[{
+        prop2:{}
+    },{
+        prop2:{}
+    }
+    ]
+    
+}
+
+update prop2;
+
+Today 
+=====
+immutable object update concepts..
+https://reactjs.org/docs/optimizing-performance.html#using-immutable-data-structures
+
+
+====
