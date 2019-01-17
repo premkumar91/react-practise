@@ -7,8 +7,16 @@ When we using map for loop component.
     So our class will have a custom control over the configuaration.See Header Navbar implemetation in header.js.
 3. power of configuaration + jsx spread syntax usage header.js
 
+====
+string "active" || " active" || "active "
 
+[]->[]
+[]//
 
+find the active path -> may be in root or child -> add active class
+update non active path -> remove active class
+
+map =>
 
 
 

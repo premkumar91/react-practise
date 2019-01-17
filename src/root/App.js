@@ -21,7 +21,7 @@ class App extends React.Component{
         <Header/>
         <Switch>
           {routes.data.map((route)=>
-          <Route exact path={route.path} component={route.component}/>)}
+          <Route exact path={route.path} component={route.component} key={route.key}/>)}
           <Route component={routes.defaultRoute.component}/>
         </Switch>
         <Footer/>
