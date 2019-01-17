@@ -1,5 +1,6 @@
 import React from 'react';
 import FreightServicesPromo from '../content/FreightServicesPromo';
+import Map from '../map/Map'
 class Contact extends React.Component{
   constructor(props){
     super(props)
@@ -41,7 +42,7 @@ class Contact extends React.Component{
           </div> 
         </div>
         <div className="row mt-5 mb-5 d-flex justify-content-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31085.2174576993!2d80.2488595!3d13.121207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265054291a09b%3A0x276fe51caf7b48d3!2sPerambur%2C+Chennai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1546447214212" width="600" height="450" frameBorder="0" style={this.state.mapStyle} allowFullScreen></iframe>
+          <Map styles = {this.state.mapStyle}/>
         </div>
         <p className="text-center font-weight-bolder">Our Freight Forwarding Services</p>        
         <div className="row">
