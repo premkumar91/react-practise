@@ -1,0 +1,29 @@
+Purpose of Building Static Reuable Website
+=================================
+
+Frame Work Used -> Bootstrap , React Js, Node Js.
+Cloud -> Aws
+
+Why Bootstrap
+=============
+Well Established Responsive Framework.
+Good Css Customisation + sass support.
+Client Side Validation.
+Looks Like Easily Mapped to React Js Component.
+
+Why React Js
+============
+Demanding client side Framework.
+Good Performance + wide audience.
+
+Learning Could be
+======
+
+ReactJs without redux. Naturally grows and fits into redux later.
+Sass + Css Architecture Practise [Still in study phase]. 
+Node Js. 
+Awd Cloud Knowledge on Front End + Backend deployment.
+
+======
+
+Event should also be configurable.

@@ -48,20 +48,7 @@ class Header extends React.Component{
   }
 
   onClick(item,event){
-    //alert('hello');
-    // let prevNavItems = [...this.state.navItems]
-    // prevNavItems.forEach(prevNavitem => {
-    //   if(prevNavitem.name === item.name){
-    //     prevNavitem.listAttributes.className = "nav-item active"
-    //   }
-    //   else{
-    //     prevNavitem.listAttributes.className = "nav-item"
-    //   }
-    // })
-    // this.setState({
-    //   navItems:prevNavItems
-    // })
-    //console.log(item);
+   
   }
 
   mouseEnter(item,event){
