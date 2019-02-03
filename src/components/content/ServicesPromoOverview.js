@@ -39,7 +39,7 @@ class ServicesPromoContent extends React.Component {
                     </div> 
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
                         <h1 className="text-center font-weight-light">Sea Freight</h1>
-                        <p className="lead text-justify">With multitude of global sea frieght services, we offer seamless logistics to small -scale to fortune companies. we are an intrinsic part of our customers import/export departments, offering flawless logistics solutions for enormous variety of cargos, ensuring fast transit time and full control over it. we have an elegant tracking system to keep your business on track.</p>
+                        <p className="lead text-justify">With multitude of global sea frieght services, we offer seamless logistics to small -scale to fortune companies, ensuring fast transit time and full control over it. we are an intrinsic part of our customers import/export units, offering flawless logistics solutions for enormous variety of cargos. we have an elegant tracking system to keep your business on track.</p>
                         <p className="mb-2 font-weight-bold ">Our Customised Services are</p>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Flexible FCL/LCL load services.</li>
@@ -49,6 +49,7 @@ class ServicesPromoContent extends React.Component {
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Elegant tracking system.</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>On Time booking and pickup.</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Hassle-free shipment.</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Cost effective and elegant solution to your needs.</li>
                         </ul>
                     </div>    
                 </div> 
