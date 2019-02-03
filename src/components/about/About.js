@@ -16,7 +16,7 @@ function About(){
         <h1 className="display-4 text-center mb-2">Freight Forwarding Services</h1>
         {/* <p className="lead mb-5 mt-5 text-justify">Our freight forwarding services are built for any size of firms. we strive hard to make our customers happy by understanding their needs and deliver the best solutions. From ocean shipments to airfreight and inland transportation, our established carrier network ensure complete safety, fast transit times and hassle free shipment to destination.</p> */}
         <p className="lead mb-5 mt-5 text-justify">
-          Our affiliation with world class carriers, affirms best feasible costs to move goods. From air frieghters and trucking companies, to rail frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness.  
+          Our affiliation with world class carriers, affirms best feasible costs to move goods. From sea frieghters and trucking companies, to air frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness.  
         </p>
         <FreightServicesPromo/>
       </div>

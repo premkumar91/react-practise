@@ -20,17 +20,17 @@ class CompanyDescription extends React.Component{
                             Our service spectrum has it all. Naming a few...
                         </p>
                         <ul className="list-group list-group-flush">
-                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Tracking inland transportation</li>
-                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Preparation of shipping and export documents</li>
-                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Warehousing</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Booking cargo space</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Negotiating freight charges</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Freight consolidation</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Preparation of shipping and export documents</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Cargo insurance</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Tracking inland transportation</li>
+                            <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Warehousing</li>
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Filing of insurance claims </li>
                         </ul>
                         <p className="mt-2">
-                            Our affiliation with world class carriers, affirms best feasible costs to move goods. From air frieghters and trucking companies, to rail frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness. 
+                            Our affiliation with world class carriers, affirms best feasible costs to move goods. From sea frieghters and trucking companies, to air frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness. 
                         </p>
                     </div>    
                 </span>
