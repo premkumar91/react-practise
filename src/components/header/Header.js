@@ -129,20 +129,23 @@ class Header extends React.Component{
         activeItem.listAttributes.className += " active";
        }
     
-    prevNavItems.forEach(item=>{
-      if(item.name !== activeItem.name)
-      {
-        if(this.isBegginingWord(item.listAttributes.className,activeClass)
-          || this.isMiddleOrEndOfWord(item.listAttributes.className,activeClass)
-          ){
-            item.listAttributes.className = this.replaceString(item.listAttributes.className,item.listAttributes.className.indexOf(activeClass),"",activeClass.length)
-          }
-      }
-      return item;
-    })   
-    this.setState({
-      navItems:prevNavItems
-    }) 
+    if(activeItem){
+      prevNavItems.forEach(item=>{
+        if(item.name !== activeItem.name)
+        {
+          if(this.isBegginingWord(item.listAttributes.className,activeClass)
+            || this.isMiddleOrEndOfWord(item.listAttributes.className,activeClass)
+            ){
+              item.listAttributes.className = this.replaceString(item.listAttributes.className,item.listAttributes.className.indexOf(activeClass),"",activeClass.length)
+            }
+        }
+        return item;
+      })   
+      this.setState({
+        navItems:prevNavItems
+      })    
+    }   
+   
   }
 
   replaceString(text,index,replacement,length){
