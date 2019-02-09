@@ -1,6 +1,20 @@
+
 @media (min-width: 768px) {
     .logo-margin{
         margin-left: 11% !important;
+    }
+}
+@media (min-width: 768px) and (max-width:792px){
+    .header-icon-size{
+        width : 54px !important;
+        height: 54px !important;
+    }
+}
+
+@media (min-width: 797px){
+    .header-icon-size{
+        width : 80px !important;
+        height: 80px !important;
     }
 }
 .header-skew{
@@ -17,7 +31,7 @@
     }
 }
 .nav-cus-font{
-    font-size: 0.75rem;
+    font-size: 0.82rem;
 }
 .header-section{
     max-width: 100%;
@@ -106,4 +120,13 @@
 }
 .footer-mb{
     margin-bottom: 0.75rem;
+}
+.header-icon-size{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width:833px){
+    .nav-cus-font{
+        font-size: 0.75rem;
+    }
 }

@@ -192,7 +192,7 @@ class Header extends React.Component{
         </div>         
         <nav className="navbar navbar-expand-md navbar-light">
           <a className="navbar-brand logo-margin nav-logo" href="/">
-            <img src={this.state.website.logo} width="50" height="50" className="d-inline-block align-middle" alt=""/>
+            <img src={this.state.website.logo} className="d-inline-block align-middle header-icon-size" alt=""/>
             <span className="align-middle">{' '}{this.state.website.name}</span>
           </a>
           <ul className="ml-auto"/>
