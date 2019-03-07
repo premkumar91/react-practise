@@ -43,6 +43,7 @@ class Footer extends React.Component{
                             </span>
                         </li>
                         <li className="list-group-item footer-link"><span><i className="fas fa-phone mr-1"></i>9962798311/8946099983</span></li>
+                        <li class="list-group-item footer-link"><span><i class="fas fa-phone mr-1"></i>LandLine: 044-48688407</span></li>
                         <li className="list-group-item footer-link"><span><i className="fas fa-envelope mr-1"></i>gssfreightforwarders@gmail.com</span></li>
                     </ul>
                     </div>
