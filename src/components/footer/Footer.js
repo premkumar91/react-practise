@@ -44,7 +44,7 @@ class Footer extends React.Component{
                         </li>
                         <li className="list-group-item footer-link"><span><i className="fas fa-phone mr-1"></i>9962798311/8946099983</span></li>
                         <li class="list-group-item footer-link"><span><i class="fas fa-phone mr-1"></i>LandLine: 044-48688407</span></li>
-                        <li className="list-group-item footer-link"><span><i className="fas fa-envelope mr-1"></i>{' '}gnanasekar@gssfreightforwarders.com</span></li>
+                        <li className="list-group-item footer-link"><span>For Enquiries :- <i className="fas fa-envelope mr-1"></i>{' '}nisha@gssfreightforwarders.com</span></li>
                     </ul>
                     </div>
                 </div>

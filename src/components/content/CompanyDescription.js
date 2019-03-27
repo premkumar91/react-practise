@@ -30,7 +30,7 @@ class CompanyDescription extends React.Component{
                             <li className="list-group-item list-item-unset"><i className="fa fa-check" aria-hidden="true"></i>Filing of insurance claims </li>
                         </ul>
                         <p className="mt-2">
-                            Our affiliation with world class carriers, affirms best feasible costs to move goods. From sea frieghters and trucking companies, to air frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness. 
+                            Our affiliation with world class carriers, affirms best feasible costs to move goods. From sea freighters and trucking companies, to air frieghters and ocean liners, our array of alliance is the most economical route that balances speed, cost and trustworthiness. 
                         </p>
                     </div>    
                 </span>
